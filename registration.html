@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GPS Registration</title>
+    <style>
+        body {
+            background-color: darkgrey;
+            line-height: 1.5rem;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .container {
+            background-color: bisque;
+            border-radius: 10px solid black;
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        label {
+            display: initial;
+            font-size: 1.2rem;
+            font-style: italic;
+           
+        }
+
+        input[type=text],
+        select,
+        textarea,
+        input[type=tel],
+        input[type=email] {
+            width: 100%;
+            padding: 22px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        input[type=file],
+        input[type=date] {
+            height: 30px;
+            margin-left: 10ex;
+            font-size: 1.2rem;
+        }
+
+        input[type=radio] {
+            margin-right: 50px;
+        }
+
+        input[type=checkbox]{
+           margin-right: 50px;
+        }
+
+        input[type=submit],
+        input[type=Reset] {
+            background-color: green;
+            color: white;
+            padding: 12px 60px 12px 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 300px;
+            font-size: 1.3rem;
+        }
+
+        input[type=Reset] {
+            background-color: red;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><em>
+            <marquee><u>WELCOME TO GYANDEEP SCHOOL, OLAPUR GANGAUR REGISTRATION PORTAL.</u></marquee>
+        </em>REGISTRATION FORM
+        <hr color="black">
+    </h1>
+    <div class="container">
+        <form action="Registration">
+            <div>
+                <label><strong>First Name</strong>
+                    <input type="text" name="firstName"></label>
+                <label><strong>Middle Name</strong>
+                    <input type="text" name="secondName"></label>
+                <label><strong>Last Name</strong>
+                    <input type="text" name="lastName"></label>
+                <label><strong>Upload Image</strong>
+                    <input type="file" id="image" name="image" accept="image/png, image/jpeg"><br>
+                    <label><strong>Email ID</strong>
+                        <input type="email" id="email" pattern=".+@globex\.com" size="30" required></label>
+                    <label><strong>Phone no:-</strong>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                    <br>
+                    <label><strong>Mother's Name</strong></label><br>
+                    <label><strong>First Name</strong>
+                        <input type="text" name="firstName"></label>
+                    <label><strong>Middle Name</strong>
+                        <input type="text" name="middileName"></label>
+                    <label><strong>Last Name</strong>
+                        <input type="text" name="lastName"></label>
+                    <br><label><strong>Father's Name</strong><br>
+                        <label><strong>First Name</strong>
+                            <input type="text" name="firstName"></label>
+                        <label><strong>Middle Name</strong>
+                            <input type="text" name="middileName"></label>
+                        <label><strong>Last Name</strong>
+                            <input type="text" name="lastName"></label>
+                        <br>
+                        <label> <strong>Gender</strong>
+                            <label><strong>Male</strong>
+                                <input type="radio" name="gender" value="male"></label>
+                            <label><strong>Female</strong>
+                                <input type="radio" name="gender" value="Female"></label><br>
+                            <label> <strong>Date of Birth</strong>
+                                <input type="date" name="date" value="date"></label>
+                            <br>
+                            <label> <strong>Address</strong>
+                                <textarea cols="50" rows="8"></textarea>
+                            </label><br>
+                            <label><strong>City Name</strong>
+                                <input type="text" name="City Name"></label><br>
+                            <label><strong>Pin Code</strong>
+                                <input type="text" name="Pin code"></label><br>
+
+                            <label><strong>State / UT of Permanent Address</strong>
+                                <select name="State" id="State-select">
+                                    <option value="">--Please choose an State--</option>
+
+                                    <option value="">--Select--</option>
+                                    <option value="1">Andaman and Nicobar Islands</option>
+                                    <option value="2">Andhra Pradesh</option>
+                                    <option value="3">Arunachal Pradesh</option>
+                                    <option value="4">Assam</option>
+                                    <option value="5">Bihar</option>
+                                    <option value="6">Chandigarh</option>
+                                    <option value="7">Chhattisgarh</option>
+                                    <option value="8">Dadra and Nagar Haveli and Daman and Diu</option>
+                                    <option value="10">Delhi</option>
+                                    <option value="11">Goa</option>
+                                    <option value="12">Gujarat</option>
+                                    <option value="13">Haryana</option>
+                                    <option value="14">Himachal Pradesh</option>
+                                    <option value="15">Jammu and Kashmir</option>
+                                    <option value="16">Jharkhand</option>
+                                    <option value="17">Karnataka</option>
+                                    <option value="18">Kerala</option>
+                                    <option value="37">Ladakh</option>
+                                    <option value="19">Lakshadweep</option>
+                                    <option value="20">Madhya Pradesh</option>
+                                    <option value="21">Maharashtra</option>
+                                    <option value="22">Manipur</option>
+                                    <option value="23">Meghalaya</option>
+                                    <option value="24">Mizoram</option>
+                                    <option value="25">Nagaland</option>
+                                    <option value="26">Odisha</option>
+                                    <option value="27">Puducherry</option>
+                                    <option value="28">Punjab</option>
+                                    <option value="29">Rajasthan</option>
+                                    <option value="30">Sikkim</option>
+                                    <option value="31">Tamil Nadu</option>
+                                    <option value="32">Telangana</option>
+                                    <option value="33">Tripura</option>
+                                    <option value="34">Uttar Pradesh</option>
+                                    <option value="35">Uttarakhand</option>
+                                    <option value="36">West Bengal</option>
+                                </select>
+
+                                <label><strong>Nationlity</strong></label>
+                                <label><strong>Indian</strong>
+                                    <input type="radio" name="nationlity" value="indian"></label>
+                                <label><strong>Other</strong>
+                                    <input type="radio" name="nationlity" value="other"></label><br>
+                                <label><strong>Previous class passed/Result</strong>
+                                    <input type="text" name="Applicant Name"></label><br>
+                                <label><strong>Class Applied For</strong>
+                                    <input type="text" name="classfor"></label><br>
+                                <label><strong>Extra Skill</strong></label><br>
+                                <label><strong>Drawing</strong>
+                                    <input type="checkbox" name="drawing" value="drawing"></label>
+                                <label><strong>Singing</strong>
+                                    <input type="checkbox" name="singing" value="singing"></label>
+                                <label><strong>Dancing</strong>
+                                <input type="checkbox" name="dancing" value="dancing">
+                            </label>
+                            <label><strong>Swiming</strong>
+                            <input type="checkbox" name="swiming" value="swiming">
+                        </label>
+                        <label><strong>Other</strong>
+                        <input type="checkbox" name="other" value="other"></label><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="Reset" value="Clear">
+
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>
